@@ -1,4 +1,5 @@
 #include<iostream>
+#include<limits.h>
 #include <cstring>
 using namespace std;
 
@@ -15,6 +16,20 @@ void inc(int arr[], int size){
     printArray(arr, size);
 }
 
+
+bool find(int arr[], int size, int key){
+    // LINEAR SEARCH
+
+    for(int i=0; i<size; i++){
+        if(arr[i]== key){
+            return true;
+        }
+    }
+
+    // Not present
+    return false;
+
+}
 
 
 
@@ -140,9 +155,155 @@ int main()
 
 
 
+    // DESCRIBE LINEAR SEARCH USING FUNCTION
+    // int arr[5]= {1,3,5,7,8};
+    // int size=5;
+
+    // cout<<"Enter the key to find "<<endl;
+    // int key;
+    // cin>>key;
+
+    // if(find(arr, size, key)){
+    //     cout<< "Found" <<endl;
+    // }
+    // else{
+    //     cout<<"Not Found" <<endl;
+    // }
+
     
 
+    // LINEAR SEARCH
+
+    // int arr[6]={5,69,7,89,4,2};
+    // int size=6;
+
+    // int key=69;
+
+    // bool flag = 0;
+    // // 0 --> Not Found
+    // // 1 --> Found
+
+    // for(int i=0; i<size; i++){
+    //     if(arr[i] == key)
+    //         // Found
+    //         flag=1;
+    // }
+
+    // if(flag)
+    //     cout<<"Present"<<endl;
+    
+    // else
+    //     cout<<"Absent"<<endl;
+
+     
+
+    //  COUNT 0'S AND 1'S
+    // int arr[]={0,1,0,1,1,1,0,0,0,1};
+    // int size=10;
+    // int numZero=0;
+    // int numOne=0;
+
+    // for(int i=0; i<size; i++){
+    //     if(arr[i]==0)
+    //         numZero++;
+        
+    //     if(arr[i]==1)
+    //         numOne++;
+    // }
+
+    // cout<<"Number of Zeroes is: " <<numZero<<endl;
+    // cout<<"Number of Ones is: " <<numOne<<endl;
 
 
-    return 0;
+
+    // MAXIMUM NO. OF ARRAY
+
+    // int arr[]={11,22,33,44,55,686,77,88,99,110};
+    // int size= 10;
+
+    // // initialise maximum variable with the minimum possible integer value
+    // int maxi = INT_MIN;
+    
+    // for(int i=0; i<size; i++){
+    //     if(arr[i]>maxi)
+    //         // FOUND A NO. GREATER THAN MAXI, UPDATE MAXI
+    //         maxi=arr[i];
+        
+    // }
+
+    // cout<< "MAXIMUM NO. IS: " << maxi <<endl;
+
+
+
+    // MINIMUM NO. OF ARRAY
+
+    // int arr[]={11,22,33,4,55,686,77,88,99,110};
+    // int size= 10;
+
+    // // initialise minimum variable with the minimum possible integer value
+    // int mini = INT_MAX;
+    
+    // for(int i=0; i<size; i++){
+    //     if(arr[i]<mini)
+    //         // FOUND A NO. lesser THAN MINI, UPDATE MINI
+    //         mini=arr[i];
+        
+    // }
+
+    // cout<< "MINIMUM NO. IS: " << mini <<endl;
+
+
+
+    // EXTREME PRINT IN ARRAY
+    
+    // int arr[8]={10,20,30,40,50,60,99};
+    // int size=7;
+
+    // int start=0;
+    // int end=size-1;
+
+    // while(start<=end){
+    //     if(start>end)
+    //         break;
+        
+    //     if(start == end)
+    //         cout<< arr[start] <<" ";
+
+    //     else{
+    //         cout<< arr[start] <<" ";
+    //         cout<< arr[end] <<" ";
+    //     }
+
+    //     start++;
+    //     end--;
+    // }
+
+
+    // REVERSE AN ARRAY
+
+    // int arr[8]={10,20,30,40,50,60,99};
+    // int size=7;
+
+    // int start=0;
+    // int end= size-1;
+
+    // while(start<end){
+    //     swap(arr[start],arr[end]);
+    //     start++;
+    //     end--;
+    // }
+
+    // // printing array
+
+    // for(int i=0; i<size; i++){
+    //     cout<<arr[i]<<" ";
+    // }
+
+
+
+
+
+
+
+    // return 0;
 }
