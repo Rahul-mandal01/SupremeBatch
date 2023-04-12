@@ -3,21 +3,21 @@ using namespace std;
 int main()
 {
 
-    int a=5;
-    int b=3;
+    // int a=5;
+    // int b=3;
 
-    cout<<a+b <<endl;
-    cout<<a-b <<endl;
-    cout<<a*b <<endl;
-    cout<<a/b <<endl;
-    cout<<a%b <<endl;
-    cout<<(a<=b)<<endl;
+    // cout<<a+b <<endl;
+    // cout<<a-b <<endl;
+    // cout<<a*b <<endl;
+    // cout<<a/b <<endl;
+    // cout<<a%b <<endl;
+    // cout<<(a<=b)<<endl;
 
 
-    if(a>=5 && b<=10)
-        cout<<"Limits Reached"<<endl;
-    else
-        cout<<"hii"<<endl;
+    // if(a>=5 && b<=10)
+    //     cout<<"Limits Reached"<<endl;
+    // else
+    //     cout<<"hii"<<endl;
     // double d = 5.3;
 
     // int x = (int)d;
