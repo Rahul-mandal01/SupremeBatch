@@ -112,11 +112,151 @@ int main()
     // for(int i=0; i<5; i++)
     //     cout<< i <<endl;
 
-    int i;
-    for( ; ; ){
-        if(i<5){
-            cout<< i <<endl;
-            i=i+1;
-        }
-    }
+   
+    // int i;
+    // for( ; ; ){
+    //     if(i<5){
+    //         cout<< i <<endl;
+    //         i=i+1;
+    //     }
+    // }
+
+    // int n;
+    // if(cin>>n){
+    //     cout<<"Rahul"<<endl;
+    // }
+
+    // if(cout<<"Babbar\n")
+    // {
+    //     cout<<"Love"<<endl;
+    // }
+
+    // if(0)
+    // {
+    //     cout<<"Love"<<endl;
+    // }
+    // else
+    //     cout<<"Bharat mata ki jay"<<endl;
+
+
+
+
+
+    // -----------------Pattern--------------
+
+
+
+    //-------------Printing solid Rectangle
+    //     // Outer loop - row observe
+    // for(int row=0; row<3; row++){
+    //     // inner loop - col observe
+    //     for(int col=0; col<5; col++){
+    //         cout<<"* ";
+    //     }        
+    //     cout<<endl;
+    // }
+
+    // ------------Printing Solid square 
+    // int n;
+    // cout<<"Enter the value of n:";
+    // cin>>n;
+    // for(int i=0; i<n; i++){
+    //     for(int j=0; j<n; j++){
+    //         cout<<"* ";
+    //     }
+    //     cout<<endl;
+    // }
+
+    //------------ Printing Hollow Rectangle
+    // int rowCount, colCount;
+    // cin>> rowCount >> colCount;
+    // for(int i=0; i<rowCount; i++){
+    //     if(i==0 || i==rowCount-1){
+    //         for(int j=0; j<colCount; j++){
+    //             cout<<"* ";
+    //         }
+    //     }
+    //     else{
+    //         // remaining middle rows
+    //         // first star
+    //         cout<<"* ";
+    //         for(int i=0; i<colCount-2; i++)
+    //             cout<<"  ";
+    //         // last star
+    //         cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
+
+    // ------------Printing Half Pyramid
+    // int rowCount, colCount;
+    // cin>>rowCount>>colCount;
+    // int row,col;
+    // for(int row=0; row<rowCount; row++){
+    //     for(col=0; col<row+1; col++){
+    //         cout<<"* ";
+    //     }
+    //     cout<<endl;
+    // }
+
+    // ------------Printing inverted Half pyramid
+    // int n,row,col;
+    // cin>>n;
+    // for(row=0; row<n; row++){
+    //     for(col=0; col<n-row; col++){
+    //         cout<<"* ";
+    //     }
+    //     cout<<endl;
+    // }
+    
+    // ------------Printing Numeric Half Pyramid
+    // no. of rows =n;
+    // int n,row,col;
+    // cin>>n;
+    // cout<<endl;
+    // for(row=0; row<n; row++){
+    //     for(col=0; col<row+1; col++){
+    //         cout<<col+1 ;
+    //     }
+    //     cout<<endl;
+    // }
+
+    // ------------Printing Inverted Numeric Half Pyramid
+    // no. of rows =n;
+    // int n,row,col;
+    // cin>>n;
+    // cout<<endl;
+    // for(row=0; row<n; row++){
+    //     for(col=0; col<n-row; col++){
+    //         cout<<col+1<<" " ;
+    //     }
+    //     cout<<endl;
+    // }
+
+    // ------------Printing Full Pyramid
+    // int n, row, col;
+    // cin>>n;
+    // for(row=0; row<n; row++){
+    //     for(col=0; col<n-row+1; col++){
+    //         cout<<"  ";
+    //     }
+    //     for(col=0; col<row+1; col++){
+    //         cout<<"* ";
+    //         cout<<"  ";
+    //     }
+    //     cout<<endl;
+    // }
+
+    // ------------Printing Inverted Full Pyramid
+    
+
+
+
+
+
+
+
+
+
 }
+
