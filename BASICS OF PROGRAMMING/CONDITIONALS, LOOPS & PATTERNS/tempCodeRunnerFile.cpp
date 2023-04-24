@@ -1,10 +1,13 @@
-    no. of rows =n;
-    int n,row,col;
-    cin>>n;
-    cout<<endl;
-    for(row=0; row<n; row++){
-        for(col=0; col<n-row; col++){
-            cout<<col+1 ;
+    int m;
+    int row,col;
+    cin>>m;
+    for(row=0; row<m; row++){
+        for(col=0; col<row; col++){
+            cout<<"  ";
+    }
+        for(col=0; col<m-row; col++){
+            cout<<" *  ";
         }
-        cout<<endl;
+
+    cout<<endl;
     }
