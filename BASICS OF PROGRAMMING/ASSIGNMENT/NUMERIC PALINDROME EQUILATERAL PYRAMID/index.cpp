@@ -6,13 +6,24 @@ int main(){
     cin>>n;
 
     for(int i=0; i<n; i++){
-        for(int j=0; j<2*n-1; j++){
-            for(int k=0; k<n-i-1; k++){
-                cout<<" ";
-            }
-            
+        int count=1;
 
+        for(int j=0; j<n-i-1; j++){
+                cout<<"  ";
+            }
+        
+        for( int j=0; j<i+1; j++){
+                cout<< count <<" ";
+                count++;
+            }
+        
+        int num=i;
+        for(int j=i ; j>0; j--){
+            cout<< num <<" ";
+            num--;
         }
+
+
         cout<<endl;
 
     }
