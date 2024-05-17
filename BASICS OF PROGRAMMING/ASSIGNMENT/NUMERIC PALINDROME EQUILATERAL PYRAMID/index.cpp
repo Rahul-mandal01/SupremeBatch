@@ -4,26 +4,30 @@ int main(){
     cout<<"Please enter the number: ";
     int n;
     cin>>n;
+    int k=n;
 
     for(int i=0; i<n; i++){
         int count=1;
 
-        for(int j=0; j<n-i-1; j++){
+        for(int j=0; j<k; j++){
+            if(j<n-i-1){
                 cout<<"  ";
             }
-        
-        for( int j=0; j<i+1; j++){
+            else if(j<=n-1){
                 cout<< count <<" ";
                 count++;
             }
-        
-        int num=i;
-        for(int j=i ; j>0; j--){
-            cout<< num <<" ";
-            num--;
+            else if(j==n){
+                count=count-2;
+                cout<<count<<" ";
+                count--;
+            }
+            else{
+                cout<<count<<" ";
+                count--;
+            }
         }
-
-
+        k++;
         cout<<endl;
 
     }
