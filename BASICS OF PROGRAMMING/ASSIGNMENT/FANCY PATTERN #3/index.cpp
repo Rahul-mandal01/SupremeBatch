@@ -1,39 +1,30 @@
 #include<iostream>
+#include"assert.h"
 using namespace std;
 int main(){
 
-    cout<<"Please enter the number: ";
+    cout<<"Please enter any number in between 1 to 10 : ";
     int n;
     cin>>n;
+    assert(n<=9);
 
     for(int i=0; i<n; i++){
 
-        for(int j=0; j<3*n+2 ; j++){
-
-            if(j<2*n-i-2){
-                cout<<"*";
+        int start_num_index = 8-i; // from which column you want value to be start printing
+        int num = i+1;  // printing digits
+        int count_num = num; //how many times we want print the no.
+        for(int j=0; j<17; j++){
+            if( j== start_num_index && count_num> 0){
+                cout<<num;
+                start_num_index+=2;
+                count_num--;
             }
-
-
-            else if( j >= 2*n-i-2 && j < 2*n+i-1 ){
-
-                if( j == 2*n-i-2 || (j + i) %2==0 ){
-                    cout<< i+1 ; 
-                }
-                else{
-                    cout<<"*";
-                }
-
-            }
-
+            
             else{
                 cout<<"*";
             }
-
-
-
-
         }
+
         cout<<endl;
     }
 }
