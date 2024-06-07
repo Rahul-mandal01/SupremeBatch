@@ -23,8 +23,9 @@ int decimalToBinaryMethod2(int n){
     int binaryno = 0;
     int i=0;
     while(n>0){
+        // finding bits like 0,1
         int bit = n & 1;
-
+        
         binaryno = bit*pow(10, i++) + binaryno;
 
         n = n >> 1;
