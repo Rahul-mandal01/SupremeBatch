@@ -3,7 +3,7 @@
 using namespace std;
 
 
-int binaryToDecimal(int n){
+int binaryToDecimalMethod1(int n){
     int decimal = 0;
     int i=0;
     while(n){
@@ -15,11 +15,15 @@ int binaryToDecimal(int n){
     return decimal;
 }
 
+int binaryToDecimalMethod2(int n){
+    
+}
+
 
 int main(){
 
     int binaryno;
     cin>>binaryno;
-    cout<<binaryToDecimal(binaryno)<<endl;
+    cout<<binaryToDecimalMethod2(binaryno)<<endl;
 
 }
