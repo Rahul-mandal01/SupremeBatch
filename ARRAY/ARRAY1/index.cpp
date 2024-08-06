@@ -39,6 +39,7 @@ int main(){
     // int arr[] = {1,3,5,7,9};
 
     // printing all values
+     
     // for(int index=0; index<5; index++){
     //     cout<<arr[index]<<" ";
     // }
@@ -79,7 +80,7 @@ int main(){
     // int arr[10] = {0} ;
 
 
-    // -----------------------------Using memeset
+    // -----------------------------Using memset
     // int arr[10];
     //  memset(arr , 0 , sizeof(arr));
 
