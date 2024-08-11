@@ -15,7 +15,7 @@
 #include<vector>
 using namespace std;
 int main(){
-    vector<int> arr ={12,2,12,3,12, 4, 12, 4, 12, 4,12, 4};
+    vector<int> arr ={12,2,12,3,12, 4, 12, 4, 12, 4,12,12, 4};
     int n = arr.size();
 
 
@@ -30,6 +30,7 @@ int main(){
                 
                 if(count > n/2 ){
                     cout<<"printing majority: "<< arr[i] <<endl;
+                    break;
                 }
                 else{
                     cout<<"NO MAJORITY ELEMENT FOUND "<<endl;
