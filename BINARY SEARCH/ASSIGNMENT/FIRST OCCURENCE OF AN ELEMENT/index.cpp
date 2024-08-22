@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 int firstOccurence(vector<int> v, int target){
@@ -34,6 +35,12 @@ int main(){
     int indexOfFirstOcc = firstOccurence(v, target);
 
     cout<<"ans is "<<indexOfFirstOcc<<endl; 
+
+
+    // ----------------------ALTERNATE WAY------------- 
+    
+    auto ans2 = lower_bound(v.begin(), v.end(), target);
+    cout<<"ans2 is: "<< ans2 - v.begin() << endl;
 
     return 0;
 }
