@@ -66,7 +66,7 @@ int main(){
     int totalOcc = indexOfLastOcc - indexOfFirstOcc+1;
     cout<<"Total occurences: "<<totalOcc<<endl;
 
-
+    // ----------------------ALTERNATE WAY--------------
     auto low = lower_bound(v.begin(),v.end(), target);
     auto upper = upper_bound(v.begin(),v.end(), target);
     int upperBound = (upper-v.begin()-1);
