@@ -52,9 +52,9 @@ class Solution
                 c++;
                 timeSum = a[i];
                 if(c>k)   return false;
-                else{
+            }
+            else{
                     timeSum += a[i];
-                }
             }
         }
         return true;
