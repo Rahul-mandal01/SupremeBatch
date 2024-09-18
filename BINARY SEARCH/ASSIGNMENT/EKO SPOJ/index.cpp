@@ -15,7 +15,7 @@ bool isPossibleSolution(vector<long long int> trees, long long int mid, long lon
 
 long long int maxSawBladeHeight(vector<long long int> trees, long long int m){
     long long int start=0, end, ans = -1;
-    end = *max_element(trees.begin(),trees.end());
+    end = *max_element(trees.begin(),trees.end()); //----------this STL function return maximum element
 
     while(start <= end){
         long long int mid = start + (end-start)/2;
