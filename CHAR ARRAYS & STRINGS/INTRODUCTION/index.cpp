@@ -3,6 +3,16 @@
 #include<string.h>
 using namespace std;
 
+int getLength(char name[]){
+    int length = 0;
+    int i = 0;
+
+    while(name[i] != '\0'){
+        length++;
+        i++;
+    }
+    return length;
+}
 
 void reverseCharArray(char name[]) {
     int i = 0;
@@ -44,6 +54,63 @@ int main(){
     // getline(cin, name);
     // cin.getline(name, 100);
     // cout << name << endl;
+
+
+    //---------------------STRING---------
+
+    // CREATE STRING
+    // string str;
+
+    // STRING INPUT
+    // getline(cin, str);
+
+    // PRINT STRING
+    // cout << "String: " << str << endl;
+    // cout<< "Length: " << str.length() << endl;
+    // cout<< "isEmpty: " << str.empty() << endl;
+
+    // str.push_back('A');
+    // cout<< "After push_back: " << str << endl;
+
+    // str.pop_back();
+    // cout<< "After pop_back: " << str << endl;
+
+    // cout<< str.substr(2, 5) <<endl;
+
+    // string a = "LOVE";
+    // string b = "BABBAR";
+
+    // if(a.compare(b) == 0){
+    //     cout<< "a and b are exactly the same strings"<<endl;
+    // }
+    // else{
+    //     cout<< "a and b are not exactly the same strings"<<endl;
+    // }
+
+    // string x = "cbcd";
+    // string y = "bcda";
+
+    // cout<< x.compare(y)<<endl;
+
+    // string sentence = "hello jee kaise ho saare";
+    // string target = "hojjj";
+
+    // cout<< sentence.find(target);
+
+    // if(sentence.find(target) == string::npos){
+        // cout<< "Target not found in the sentence."<<endl;
+    // }
+
+    // string str = "This is my first message";
+    // string word = "Babbar";
+    // str.replace(0, 4, word);
+    // str.replace(11, 5, "Second");
+
+    // cout<< str <<endl;
+
+    string str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    str.erase(10,10 );
+    cout<< str <<endl;
 
     return 0;
 }
