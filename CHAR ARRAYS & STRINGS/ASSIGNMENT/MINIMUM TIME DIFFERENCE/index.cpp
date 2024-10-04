@@ -24,32 +24,38 @@ class Solution {
 public:
     int findMinDifference(vector<string>& timePoints) {
         // STEP 1: CONVERT TIME STRING INTO MINUTES INTEGER VALUE
-        vector<int> minutes;
+        vector<int> timeInMinutes;  // Create a vector to store total minutes for each time point
+        
+        // Loop through each time string in the input vector
         for(int i=0; i<timePoints.size(); i++){
-            string curr = timePoints[i];
-            int hours = stoi(curr.substr(0,2));
-            int mins = stoi(curr.substr(3,2));
-            int totalMinutes = hours*60 + mins;
-            minutes.push_back(totalMinutes);
+            string curr = timePoints[i];  // Get the current time string
+            int hours = stoi(curr.substr(0,2));  // Extract the hours part and convert to an integer
+            int mins = stoi(curr.substr(3,2));  // Extract the minutes part and convert to an integer
+            int totalMinutes = hours*60 + mins;  // Calculate the total minutes
+            timeInMinutes.push_back(totalMinutes);  // Store the total minutes in the vector
         }
 
         // STEP 2: SORT
-        sort(minutes.begin(), minutes.end());
+        sort(timeInMinutes.begin(), timeInMinutes.end());  // Sort the vector of total minutes
 
         // STEP 3: DIFFERENCE AND CALCULATE MIN DIFFERENCE
-        int mini = INT_MAX;
-        int n = minutes.size();
+        int mini = INT_MAX;  // Initialize the minimum difference with a very large value
+        int n = timeInMinutes.size();  // Store the size of the vector
 
+        // Loop through the vector (except the last element)
         for(int i=0; i<n-1; i++){
-            int diff = minutes[i+1] - minutes[i];
-            mini = min( mini, diff );
+            int diff = timeInMinutes[i+1] - timeInMinutes[i];  // Calculate the difference between consecutive elements
+            mini = min(mini, diff);  // Update the minimum difference if the current difference is smaller
         }
 
-        // SOMETHING MISSING, NOW THIS IS THE GAME
-        int lastDiff1 = (minutes[0]+1440)- minutes[n-1];
-        int lastDiff2 = minutes[n-1] - minutes[0];
-        int lastDiff = min(lastDiff1, lastDiff2);
-        mini = min( mini, lastDiff );
-        return mini;
+        // HANDLE CIRCULAR TIME DIFFERENCE
+        // Calculate the difference between the first and last elements, considering the circular nature of the clock
+        int lastDiff1 = (timeInMinutes[0]+1440) - timeInMinutes[n-1];
+        // Find the minimum of the two calculated differences
+        int lastDiff = min(mini, lastDiff1);
+        // Update the minimum difference if the circular difference is smaller
+        mini = min(mini, lastDiff);
+        
+        return mini;  // Return the smallest difference
     }
 };
