@@ -62,3 +62,23 @@ public:
         return ans; // Return the longest common prefix
     }
 };
+
+
+
+// Time Complexity (T.C.):
+// The outer while loop runs until the shortest string in the vector is fully checked, which could be at most n times, where n is the length of the shortest string.
+
+// The inner for loop runs for each character position across all strings. Thus, it runs m times, where m is the number of strings in the vector.
+
+// Since every character in each string is checked at most once, the overall time complexity is: O(m.n), where m is the number of strings and n is the length of the shortest string.
+
+// Space Complexity (S.C.):
+// The space complexity is determined by the storage used for the output string ans.
+
+// In the worst case, the length of ans can be as long as the shortest string in the vector, so it uses O(n) space.
+
+// Constant space is used for other variables like i, j, and curr_ch.
+
+// Thus, the overall space complexity is: O(n), where n is the length of the shortest string.
+
+
