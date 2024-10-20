@@ -23,42 +23,42 @@
 // // 0 <= nums[i] <= 109
 
 
-// class Solution {
-// public:
-//     // Comparator function to decide the order of strings
-//     static bool mycomp(string a, string b){
-//         // Concatenate in both possible orders
-//         string t1 = a + b;
-//         string t2 = b + a;
-//         // Return true if t1 is greater, else false
-//         return t1 > t2;
-//     }
+class Solution {
+public:
+    // Comparator function to decide the order of strings
+    static bool mycomp(string a, string b){
+        // Concatenate in both possible orders
+        string t1 = a + b;
+        string t2 = b + a;
+        // Return true if t1 is greater, else false
+        return t1 > t2;
+    }
 
-//     string largestNumber(vector<int>& nums) {
-//         // Create a vector of strings to store string representations of numbers
-//         vector<string> snums;
+    string largestNumber(vector<int>& nums) {
+        // Create a vector of strings to store string representations of numbers
+        vector<string> snums;
         
-//         // Convert each integer in nums to a string and add it to snums
-//         for(auto n: nums){
-//             snums.push_back(to_string(n));
-//         }
+        // Convert each integer in nums to a string and add it to snums
+        for(auto n: nums){
+            snums.push_back(to_string(n));
+        }
         
-//         // Sort the strings using the custom comparator mycomp
-//         sort(snums.begin(), snums.end(), mycomp);
+        // Sort the strings using the custom comparator mycomp
+        sort(snums.begin(), snums.end(), mycomp);
         
-//         // If the largest number is "0", return "0"
-//         if(snums[0] == "0")
-//             return "0";
+        // If the largest number is "0", return "0"
+        if(snums[0] == "0")
+            return "0";
         
-//         // Initialize an empty answer string
-//         string ans = "";
+        // Initialize an empty answer string
+        string ans = "";
         
-//         // Concatenate all strings in snums to form the final largest number
-//         for(auto str: snums){
-//             ans += str;
-//         }
+        // Concatenate all strings in snums to form the final largest number
+        for(auto str: snums){
+            ans += str;
+        }
         
-//         // Return the answer
-//         return ans;
-//     }
-// };
+        // Return the answer
+        return ans;
+    }
+};
