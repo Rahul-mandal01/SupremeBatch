@@ -81,22 +81,22 @@ public:
 
 
 
-Time Complexity (TC):
-buildOrderMap(order): This runs in 𝑂(𝑚), where 𝑚 is the length of the order string.
+// Time Complexity (TC):
+// buildOrderMap(order): This runs in 𝑂(𝑚), where 𝑚 is the length of the order string.
 
-isAlienSorted(words, order):
+// isAlienSorted(words, order):
 
-The outer loop runs 𝑂(𝑛−1) times, where 𝑛 is the number of words.
+// The outer loop runs 𝑂(𝑛−1) times, where 𝑛 is the number of words.
 
-For each pair of words, comparing characters takes 𝑂(min(𝑙𝑒𝑛1,𝑙𝑒𝑛2)), where len1 and len2 are the lengths of the two words.
+// For each pair of words, comparing characters takes 𝑂(min(𝑙𝑒𝑛1,𝑙𝑒𝑛2)), where len1 and len2 are the lengths of the two words.
 
-In the worst case, each character comparison is followed by an 𝑂(1) lookup in the order_map.
+// In the worst case, each character comparison is followed by an 𝑂(1) lookup in the order_map.
 
-So, the overall time complexity is 𝑂(𝑚+𝑛⋅𝐿), where 𝐿 is the average length of the words.
+// So, the overall time complexity is 𝑂(𝑚+𝑛⋅𝐿), where 𝐿 is the average length of the words.
 
-Space Complexity (SC):
-order_map: The space complexity for the order map is 𝑂(𝑚), where 𝑚 is the length of the order string.
+// Space Complexity (SC):
+// order_map: The space complexity for the order map is 𝑂(𝑚), where 𝑚 is the length of the order string.
 
-Auxiliary space: Minimal additional space for variables and the stack space used in recursion.
+// Auxiliary space: Minimal additional space for variables and the stack space used in recursion.
 
-Therefore, the space complexity is 𝑂(𝑚)
+// Therefore, the space complexity is 𝑂(𝑚)
