@@ -92,11 +92,11 @@ public:
 
 // In the worst case, each character comparison is followed by an 𝑂(1) lookup in the order_map.
 
-// So, the overall time complexity is 𝑂(𝑚+𝑛⋅𝐿), where 𝐿 is the average length of the words.
+So, the overall time complexity is 𝑂(𝑚+𝑛⋅𝐿), where 𝐿 is the average length of the words.
 
 // Space Complexity (SC):
 // order_map: The space complexity for the order map is 𝑂(𝑚), where 𝑚 is the length of the order string.
 
 // Auxiliary space: Minimal additional space for variables and the stack space used in recursion.
 
-// Therefore, the space complexity is 𝑂(𝑚)
+Therefore, the space complexity is 𝑂(𝑚)
