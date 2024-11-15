@@ -87,3 +87,8 @@ class Solution {
 // // } Driver Code Ends
 
 
+// Time Complexity (TC):
+// The time complexity of the gcd function provided is O(max(a, b)). This is because in the worst case, the loop runs until one of the numbers (a or b) becomes zero. Each iteration reduces the value of a or b by at least 1, leading to a maximum of max(a, b) iterations.
+
+// Space Complexity (SC):
+// The space complexity of the gcd function is O(1). This is because the function only uses a constant amount of extra space for its variables (a, b) and does not require any additional space that grows with the input size.
