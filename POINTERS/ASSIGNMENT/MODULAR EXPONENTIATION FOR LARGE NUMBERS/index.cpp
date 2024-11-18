@@ -65,28 +65,28 @@ class Solution
 };
 
 // { Driver Code Starts.
-int main(){
-    int T;
-    // Input number of test cases
-    cin >> T;
-    while (T--)
-    {
-        long long int x, n, m;
-        // Input base, exponent, and modulus
-        cin >> x >> n >> m;
+// int main(){
+//     int T;
+//     // Input number of test cases
+//     cin >> T;
+//     while (T--)
+//     {
+//         long long int x, n, m;
+//         // Input base, exponent, and modulus
+//         cin >> x >> n >> m;
         
-        Solution ob;
-        // Compute (x^n) % m using PowMod function
-        long long int ans = ob.PowMod(x, n, m);
+//         Solution ob;
+//         // Compute (x^n) % m using PowMod function
+//         long long int ans = ob.PowMod(x, n, m);
         
-        // Output the result
-        cout << ans << "\n";
+//         // Output the result
+//         cout << ans << "\n";
         
-        // Print delimiter for separation
-        cout << "~" << "\n";
-    }
-    return 0;
-}
+//         // Print delimiter for separation
+//         cout << "~" << "\n";
+//     }
+//     return 0;
+// }
 // } Driver Code Ends
 
 
