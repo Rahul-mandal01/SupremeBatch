@@ -53,13 +53,13 @@ int main(){
     // solved(p);
     // cout << a << endl;
 
-    // int a = 5;
-    // int *p = &a;
+    int a = 5;
+    int *p = &a;
 
-    // cout << "before" << p << endl;
-    // util(p);
+    cout << "before" << p << endl;
+    util(p);
 
-    // cout << "after" << p << endl;
+    cout << "after" << p << endl;
 
-    // return 0;
+    return 0;
 }
