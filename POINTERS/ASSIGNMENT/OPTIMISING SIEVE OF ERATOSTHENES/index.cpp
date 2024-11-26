@@ -21,9 +21,6 @@ using namespace std;
 // }
 
 
-#include <vector>
-using namespace std;
-
 vector<bool> Sieve(int n){
     // Create a sieve array of N size telling if the number is prime
     vector<bool> sieve(n+1, true);  // Initially assume all numbers are prime
