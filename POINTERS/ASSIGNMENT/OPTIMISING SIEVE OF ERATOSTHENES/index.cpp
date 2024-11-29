@@ -40,7 +40,7 @@ vector<bool> Sieve(int n){
 }
 
 int main(){
-    vector<bool> sieve = Sieve(25);
+    vector<bool> sieve = Sieve(50);
     for(int i=0; i<=50; i++){
         if(sieve[i]){
             cout << i << " ";
