@@ -54,26 +54,26 @@ string numberToWords(int num) {
 
 
 // Time Complexity (TC)
-// The time complexity of the numberToWords function is O(N), where N is the number of digits in the input number num. Here's a detailed breakdown:
+// The time complexity of the numberToWords function is O(log10(num)), where num is the input number. Here's a detailed breakdown:
 
 // Iteration through the Mapping:
-
 // The function iterates through the vector mp, which has a constant size of 29 elements. This iteration is O(1) since the size of mp does not change with the input size.
+
 // Recursive Calls:
+// The function makes recursive calls to handle the quotient and remainder parts of the number. Each recursive call reduces the number by a factor of 10.
 
-// The function makes recursive calls to handle the quotient and remainder parts of the number. Each recursive call processes a smaller part of the number, reducing the number of digits by at least one in each step.
 // Combining Parts:
-
 // Combining the parts (quotient, current word, and remainder) is done in constant time.
-// Overall, the function processes each digit of the number once, leading to a linear time complexity of O(N).
+
+// Overall, the function processes each digit of the number once, leading to a logarithmic time complexity of O(log10(num)).
 
 // Space Complexity (SC)
-// The space complexity of the numberToWords function is also O(N), where N is the number of digits in the input number num. Here's a detailed breakdown:
+// The space complexity of the numberToWords function is O(log10(num)), where num is the input number. Here's a detailed breakdown:
 
 // Call Stack:
-
 // The function uses recursion to process the number. Each recursive call adds a new frame to the call stack. In the worst case, the depth of the recursion is equal to the number of digits in the number.
-// String Construction:
 
+// String Construction:
 // The function constructs strings to represent the English words for the number. The space required for these strings is proportional to the number of digits in the number.
-// Overall, the maximum depth of the recursion and the space required for string construction both contribute to a linear space complexity of O(N).
+
+// Overall, the maximum depth of the recursion and the space required for string construction both contribute to a logarithmic space complexity of O(log10(num)).
