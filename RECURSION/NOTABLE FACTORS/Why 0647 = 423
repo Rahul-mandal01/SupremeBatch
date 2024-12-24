@@ -1,0 +1,40 @@
+The reason the output is 4 2 3 instead of 6 4 7 lies in how the number 0647 is interpreted in C++. When a number is prefixed with 0, it is considered an octal (base 8) number, not a decimal (base 10) number.
+
+Explanation:
+0647 in octal is equivalent to 423 in decimal.
+
+When you write int n = 0647; in your code, the compiler interprets 0647 as an octal number, which is then converted to its decimal equivalent, 423.
+
+Steps of the Conversion:
+Octal 0647 is interpreted as:
+6×8^2=6×64=384
+
+4×8^1=4×8=32
+
+7×8^0=7×1=7
+
+Adding these values:
+
+384+32+7=423
+
+So, 0647 in octal (base 8) is 423 in decimal (base 10).
+
+Execution in Your Code:
+Input:
+
+n = 423 (interpreted from 0647 in octal).
+
+Recursive Call Breakdown:
+
+First call: printDigits(423), output digit is 3 (423 % 10).
+
+Second call: printDigits(42), output digit is 2 (42 % 10).
+
+Third call: printDigits(4), output digit is 4 (4 % 10).
+
+Output Sequence:
+
+The digits 4, 2, 3 are printed in order, resulting in 4 2 3.
+
+Solution:
+If you want the number to be interpreted as a decimal, simply remove the leading zero:
